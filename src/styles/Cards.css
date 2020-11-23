@@ -1,0 +1,20 @@
+.black-text {
+    color: black;
+}
+
+.cards-box {
+    flex-wrap: wrap;
+}
+
+.cards-container {
+    text-align: center;
+}
+
+.cards-title {
+    font-size: 20px;
+    padding: 16px 16px;
+}
+
+.white-text {
+    color: white;
+}
