@@ -1,16 +1,3 @@
-.brightness-icon {
-    height: 40px;
-    transform: scale(1);
-    transition: 250ms;
-    width: 40px;
-}
-
-.brightness-icon:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 250ms;
-}
-
 .github-img {
     height: 40px;
     transform: scale(1);

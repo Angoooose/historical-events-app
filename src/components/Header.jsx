@@ -30,15 +30,9 @@ export default function Header(props) {
     }
 
     const headerStyles = makeStyles((theme) => ({
-        root: {
-            flexGrow: 1,
-        },
         appBar: {
             backgroundColor: headerTheme,
-        },
-        title: {
-            flexGrow: 1,
-            fontSize: 20,
+            minWidth: '100%',
         },
         brightnessIconDark: {
             display: displayDarkButton,
@@ -66,13 +60,20 @@ export default function Header(props) {
                 transition: '250ms',
             },
         },
+        root: {
+            flexGrow: 1,
+        },
+        title: {
+            flexGrow: 1,
+            fontSize: 20,
+        },
     }));
 
     const classes = headerStyles();
 
     return (
         <div className={classes.root}>
-            <AppBar className={classes.appBar}>
+            <AppBar className={classes.appBar} position="static">
                 <Toolbar>
                     <Typography className={classes.title}> 
                         Historical Events
