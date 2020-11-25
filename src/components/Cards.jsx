@@ -5,10 +5,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
 
 export default function Cards(props) {
-    const { headerTheme, bodyTextTheme } = props;
+    const { headerTheme, bodyTextTheme, dailyEvents } = props;
 
     function getCurrentDate() {
         const date = new Date();
@@ -37,32 +36,27 @@ export default function Cards(props) {
             <Box className="cards-box" display="flex" flexDirection="row" justifyContent="center">
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <Typography>
-                        </Typography>
+                        {dailyEvents[0]}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <Typography>
-                        </Typography>
+                        {dailyEvents[1]}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <Typography>
-                        </Typography>
+                        {dailyEvents[2]}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <Typography>
-                        </Typography>
+                        {dailyEvents[3]}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <Typography>
-                        </Typography>
+                        {dailyEvents[4]}
                     </CardContent>
                 </Card>
             </Box>
