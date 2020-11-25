@@ -2,6 +2,10 @@ a {
     color: white;
 }
 
+a:hover {
+    color: black;
+}
+
 .black-text {
     color: black;
 }
