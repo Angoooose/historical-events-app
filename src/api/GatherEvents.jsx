@@ -13,13 +13,14 @@ export default function GatherEvents(props) {
     }, [isNeedNewEvents]);
 
     async function getHistoricalEventsForToday() {
-        await fetch(`https://cors-anywhere.herokuapp.com/${HISTORICAL_EVENTS_API_URL}/date`).then(res => res.json()).then(res => {
+        let date = new Date();
+        await fetch(`https://cors-anywhere.herokuapp.com/${HISTORICAL_EVENTS_API_URL}/date/${date.getMonth() + 1}/${date.getDate()}`).then(res => res.json()).then(res => {
             const updatedEvents = [...dailyEvents];
-            updatedEvents.forEach((event, i) => {
-                updatedEvents[i] = `${res.data.Events[i].year} - ${res.data.Events[i].text}`;
-            });
+            for (let i = 0; i < updatedEvents.length; i++) {
+                updatedEvents[i] = res.data.Events[i].html;
+            }
             setDailyEvents(updatedEvents);
-            let date = new Date();
+            setIsNeedNewEvents(false);
             awaitNewEvents(date.getDate());
         });
     }

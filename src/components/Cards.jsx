@@ -1,6 +1,7 @@
 import '../styles/Cards.css';
 
 import { makeStyles } from '@material-ui/core/styles';
+import ReactHtmlParser from 'react-html-parser';
 
 import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
@@ -36,27 +37,27 @@ export default function Cards(props) {
             <Box className="cards-box" display="flex" flexDirection="row" justifyContent="center">
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        {dailyEvents[0]}
+                        {ReactHtmlParser(dailyEvents[0])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        {dailyEvents[1]}
+                        {ReactHtmlParser(dailyEvents[1])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        {dailyEvents[2]}
+                        {ReactHtmlParser(dailyEvents[2])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        {dailyEvents[3]}
+                        {ReactHtmlParser(dailyEvents[3])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        {dailyEvents[4]}
+                        {ReactHtmlParser(dailyEvents[4])}
                     </CardContent>
                 </Card>
             </Box>
