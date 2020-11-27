@@ -4,6 +4,7 @@ import '../styles/App.css';
 import Header from './Header.jsx';
 import Cards from './Cards.jsx';
 import GatherEvents from '../api/GatherEvents';
+import Footer from './Footer.jsx';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -31,8 +32,9 @@ function App() {
   return (
     <div className="app-container">
       <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} headerTheme={headerTheme} />
-      <GatherEvents isNeedDailyEvents={isNeedDailyEvents} setIsNeedDailyEvents={setIsNeedDailyEvents} dailyEvents={dailyEvents} setDailyEvents={setDailyEvents} dailyEventsYears={dailyEventsYears} setDailyEventsYears={setDailyEventsYears} isNeedWeeklyEvents={isNeedWeeklyEvents} setIsNeedWeeklyEvents={setIsNeedWeeklyEvents} weeklyEvents={weeklyEvents} setWeeklyEvents={setWeeklyEvents} weeklyEventsYears={weeklyEventsYears} setWeeklyEventsYears={setWeeklyEventsYears} />
       <Cards headerTheme={headerTheme} bodyTextTheme={bodyTextTheme} dailyEvents={dailyEvents} dailyEventsYears={dailyEventsYears} weeklyEvents={weeklyEvents} weeklyEventsYears={weeklyEventsYears} />
+      <GatherEvents isNeedDailyEvents={isNeedDailyEvents} setIsNeedDailyEvents={setIsNeedDailyEvents} dailyEvents={dailyEvents} setDailyEvents={setDailyEvents} dailyEventsYears={dailyEventsYears} setDailyEventsYears={setDailyEventsYears} isNeedWeeklyEvents={isNeedWeeklyEvents} setIsNeedWeeklyEvents={setIsNeedWeeklyEvents} weeklyEvents={weeklyEvents} setWeeklyEvents={setWeeklyEvents} weeklyEventsYears={weeklyEventsYears} setWeeklyEventsYears={setWeeklyEventsYears} />
+      <Footer headerTheme={headerTheme} />
     </div>
   );
 }
