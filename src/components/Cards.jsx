@@ -99,6 +99,11 @@ export default function Cards(props) {
                         <b>{dailyEventsYears[4]}</b> - {ReactHtmlParser(dailyEvents[4])}
                     </CardContent>
                 </Card>
+                <Card className={classes.card} variant="outlined">
+                    <CardContent>
+                        <b>{dailyEventsYears[5]}</b> - {ReactHtmlParser(dailyEvents[5])}
+                    </CardContent>
+                </Card>
             </Box>
             <div className={`cards-title ${bodyTextTheme}`} >Historical events for this week ({getWeekDates()}):</div>
             <Box className="cards-box" display="flex" flexDirection="row" justifyContent="center">

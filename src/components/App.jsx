@@ -10,8 +10,8 @@ function App() {
   const [headerTheme, setHeaderTheme] = useState('#2196f3');
   const [bodyTextTheme, setBodyTextTheme] = useState('black-text');
   const [isNeedDailyEvents, setIsNeedDailyEvents] = useState(true);
-  const [dailyEvents, setDailyEvents] = useState(['', '', '', '', '']);
-  const [dailyEventsYears, setDailyEventsYears] = useState(['', '', '', '', '']);
+  const [dailyEvents, setDailyEvents] = useState(['', '', '', '', '', '']);
+  const [dailyEventsYears, setDailyEventsYears] = useState(['', '', '', '', '', '']);
   const [isNeedWeeklyEvents, setIsNeedWeeklyEvents] = useState(true);
   const [weeklyEvents, setWeeklyEvents] = useState(['', '', '', '', '', '', '']);
   const [weeklyEventsYears, setWeeklyEventsYears] = useState(['', '', '', '', '', '', '']);
