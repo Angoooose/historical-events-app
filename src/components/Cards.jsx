@@ -114,32 +114,32 @@ export default function Cards(props) {
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <b>{findEventDates(1)}</b> - {ReactHtmlParser(weeklyEvents[0])}
+                        <b>{findEventDates(1)}</b> - {ReactHtmlParser(weeklyEvents[1])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <b>{findEventDates(2)}</b> - {ReactHtmlParser(weeklyEvents[0])}
+                        <b>{findEventDates(2)}</b> - {ReactHtmlParser(weeklyEvents[2])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <b>{findEventDates(3)}</b> - {ReactHtmlParser(weeklyEvents[0])}
+                        <b>{findEventDates(3)}</b> - {ReactHtmlParser(weeklyEvents[3])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <b>{findEventDates(4)}</b> - {ReactHtmlParser(weeklyEvents[0])}
+                        <b>{findEventDates(4)}</b> - {ReactHtmlParser(weeklyEvents[4])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <b>{findEventDates(5)}</b> - {ReactHtmlParser(weeklyEvents[0])}
+                        <b>{findEventDates(5)}</b> - {ReactHtmlParser(weeklyEvents[5])}
                     </CardContent>
                 </Card>
                 <Card className={classes.card} variant="outlined">
                     <CardContent>
-                        <b>{findEventDates(6)}</b> - {ReactHtmlParser(weeklyEvents[0])}
+                        <b>{findEventDates(6)}</b> - {ReactHtmlParser(weeklyEvents[6])}
                     </CardContent>
                 </Card>
             </Box>
