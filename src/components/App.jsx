@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="app-container">
       <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} headerTheme={headerTheme} />
-      <Cards headerTheme={headerTheme} bodyTextTheme={bodyTextTheme} dailyEvents={dailyEvents} dailyEventsYears={dailyEventsYears} weeklyEvents={weeklyEvents} weeklyEventsYears={weeklyEventsYears} />
+      <Cards headerTheme={headerTheme} bodyTextTheme={bodyTextTheme} dailyEvents={dailyEvents} dailyEventsYears={dailyEventsYears} weeklyEvents={weeklyEvents} weeklyEventsYears={weeklyEventsYears} isPortrait={isPortrait} />
       <GatherEvents isNeedDailyEvents={isNeedDailyEvents} setIsNeedDailyEvents={setIsNeedDailyEvents} dailyEvents={dailyEvents} setDailyEvents={setDailyEvents} dailyEventsYears={dailyEventsYears} setDailyEventsYears={setDailyEventsYears} isNeedWeeklyEvents={isNeedWeeklyEvents} setIsNeedWeeklyEvents={setIsNeedWeeklyEvents} weeklyEvents={weeklyEvents} setWeeklyEvents={setWeeklyEvents} weeklyEventsYears={weeklyEventsYears} setWeeklyEventsYears={setWeeklyEventsYears} />
       <Footer headerTheme={headerTheme} isPortrait={isPortrait} isVerySmallScreen={isVerySmallScreen} />
     </div>
