@@ -40,7 +40,7 @@ export default function Cards(props) {
             date.setDate(date.getDate() + 1);
         }
 
-        return `${weekDaysArray[weekDays[0]]}, ${monthsArray[months[0] - 1]} ${daysArray[days[0]]} - ${weekDaysArray[weekDays[6]]}, ${monthsArray[months[6] - 1]} ${daysArray[days[6]]}`;
+        return `${weekDaysArray[weekDays[0]]}, ${monthsArray[months[0] - 1]} ${daysArray[days[0] - 1]} - ${weekDaysArray[weekDays[6]]}, ${monthsArray[months[6] - 1]} ${daysArray[days[6] - 1]}`;
     }
 
     function findEventDates(index) {
@@ -58,7 +58,7 @@ export default function Cards(props) {
             date.setDate(date.getDate() + 1);
         }
 
-        return `${weekDaysArray[weekDays[index]]}, ${monthsArray[months[index] - 1]} ${daysArray[days[index]]} (${weeklyEventsYears[index]})`;
+        return `${weekDaysArray[weekDays[index]]}, ${monthsArray[months[index] - 1]} ${daysArray[days[index] - 1]} (${weeklyEventsYears[index]})`;
     }
 
     const cardStyles = makeStyles((theme) => ({
