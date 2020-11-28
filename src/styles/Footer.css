@@ -10,3 +10,16 @@
 .footer-text {
     padding-top: 6px;
 }
+
+.normal-font {
+    font-size: 16px;
+}
+
+.small-font {
+    font-size: 15px;
+}
+
+.very-small-font {
+    font-size: 12px;
+    padding-top: 8px;
+}
