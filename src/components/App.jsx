@@ -6,7 +6,7 @@ import Cards from './Cards.jsx';
 import GatherEvents from '../api/GatherEvents';
 import Footer from './Footer.jsx';
 
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -35,9 +35,11 @@ function App() {
 
   return (
     <div className="app-container">
-      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} headerTheme={headerTheme} />
-      <Cards headerTheme={headerTheme} bodyTextTheme={bodyTextTheme} dailyEvents={dailyEvents} dailyEventsYears={dailyEventsYears} weeklyEvents={weeklyEvents} weeklyEventsYears={weeklyEventsYears} isPortrait={isPortrait} />
-      <GatherEvents isNeedDailyEvents={isNeedDailyEvents} setIsNeedDailyEvents={setIsNeedDailyEvents} dailyEvents={dailyEvents} setDailyEvents={setDailyEvents} dailyEventsYears={dailyEventsYears} setDailyEventsYears={setDailyEventsYears} isNeedWeeklyEvents={isNeedWeeklyEvents} setIsNeedWeeklyEvents={setIsNeedWeeklyEvents} weeklyEvents={weeklyEvents} setWeeklyEvents={setWeeklyEvents} weeklyEventsYears={weeklyEventsYears} setWeeklyEventsYears={setWeeklyEventsYears} />
+      <div className="content-container">
+        <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} headerTheme={headerTheme} />
+        <Cards headerTheme={headerTheme} bodyTextTheme={bodyTextTheme} dailyEvents={dailyEvents} dailyEventsYears={dailyEventsYears} weeklyEvents={weeklyEvents} weeklyEventsYears={weeklyEventsYears} isPortrait={isPortrait} />
+        <GatherEvents isNeedDailyEvents={isNeedDailyEvents} setIsNeedDailyEvents={setIsNeedDailyEvents} dailyEvents={dailyEvents} setDailyEvents={setDailyEvents} dailyEventsYears={dailyEventsYears} setDailyEventsYears={setDailyEventsYears} isNeedWeeklyEvents={isNeedWeeklyEvents} setIsNeedWeeklyEvents={setIsNeedWeeklyEvents} weeklyEvents={weeklyEvents} setWeeklyEvents={setWeeklyEvents} weeklyEventsYears={weeklyEventsYears} setWeeklyEventsYears={setWeeklyEventsYears} />
+      </div>
       <Footer headerTheme={headerTheme} isPortrait={isPortrait} isVerySmallScreen={isVerySmallScreen} />
     </div>
   );
