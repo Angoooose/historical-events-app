@@ -5,6 +5,7 @@ A web application that displays historical events for the day and week. Built us
 ![history-dark](https://user-images.githubusercontent.com/68403129/100697841-e572c580-334b-11eb-8a3a-7131375a993a.PNG)
 
 # Libraries used
+- [material-ui](https://material-ui.com/)
 - [node-fetch](https://github.com/node-fetch/node-fetch)
 - [react-html-parser](https://github.com/wrakky/react-html-parser)
 - [react-responsive](https://github.com/contra/react-responsive)
