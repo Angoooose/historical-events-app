@@ -10,7 +10,7 @@ A web application that displays historical events for the day and week. Built us
 - [react-html-parser](https://github.com/wrakky/react-html-parser)
 - [react-responsive](https://github.com/contra/react-responsive)
 
-# Requirments
+# Requirements
 - NodeJS and NPM
 
 # To use
